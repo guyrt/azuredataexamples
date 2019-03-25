@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Web1",
+				"name": "Download File",
 				"type": "WebActivity",
 				"policy": {
 					"timeout": "7.00:00:00",
@@ -18,11 +18,11 @@
 				}
 			},
 			{
-				"name": "Azure Function1",
+				"name": "Parse Timestamp",
 				"type": "AzureFunctionActivity",
 				"dependsOn": [
 					{
-						"activity": "Web1",
+						"activity": "Download File",
 						"dependencyConditions": [
 							"Succeeded"
 						]
