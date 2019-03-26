@@ -3,7 +3,7 @@ from json import dumps
 from io import StringIO
 
 
-path = "year={year}/month={month}/day={day}/hour={hour}/{filename}"
+path = "sea/year={year}/month={month}/day={day}/hour={hour}/{filename}"
 container_name ='rawjumpbikedata'
 
 def write_blob(timestamp, bikedata):
