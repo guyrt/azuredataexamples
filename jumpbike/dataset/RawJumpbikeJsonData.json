@@ -1,0 +1,56 @@
+{
+	"name": "RawJumpbikeJsonData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "JumpBikeRawBlobService",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureBlob",
+		"structure": [
+			{
+				"name": "bike_id",
+				"type": "String"
+			},
+			{
+				"name": "name",
+				"type": "String"
+			},
+			{
+				"name": "lon",
+				"type": "Double"
+			},
+			{
+				"name": "lat",
+				"type": "Double"
+			},
+			{
+				"name": "is_reserved",
+				"type": "Int64"
+			},
+			{
+				"name": "is_disabled",
+				"type": "Int64"
+			},
+			{
+				"name": "jump_ebike_battery_level",
+				"type": "String"
+			},
+			{
+				"name": "jump_vehicle_type",
+				"type": "String"
+			},
+			{
+				"name": "timestamp",
+				"type": "String"
+			}
+		],
+		"typeProperties": {
+			"format": {
+				"type": "JsonFormat",
+				"filePattern": "setOfObjects"
+			},
+			"fileName": "",
+			"folderPath": "rawjumpbikedata/sea"
+		}
+	}
+}
